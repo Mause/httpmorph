@@ -62,7 +62,7 @@ jobs:
       with:
         fetch-depth: 0  # Optional, use if you use setuptools_scm
         submodules: true  # Optional, use if you have submodules
-
+    - run: make setup
     - name: Build SDist
       run: pipx run build --sdist
 
